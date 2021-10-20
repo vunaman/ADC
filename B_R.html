@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width: divive-width, initial-scale:1" />
+	<title>ADC</title>
+	<link rel="stylesheet" type="text/css" href="css.css" />
+	<script type="text/javascript" src="jquery-3.5.1.min.js"></script>
+	<script type="text/javascript" src="javascript.js"></script>
+</head>
+
+<body class="body-ADC">
+	<div class="main" style="font-size: 18px">
+		<div class="blockleft">
+			<center><h1>Các thông số đầu vào</h1></center>
+			
+			<div id="BRx">
+				<span class="spanBRx">B:</span> <br />
+				<span class="spanBRx">R:</span> <br />
+				<span class="spanBRx">x:</span> <br />
+				
+				<span class="spanBRx">Loại:</span> <br />
+				
+				Cách làm tròn: <br />
+			</div>
+			
+			<div id="number">
+				<input type="number" id="B" /> <br />
+				<input type="number" id="R" /> <br />
+				<input type="number" id="x" /> <br />
+				<select id="Select1">
+					<option>ADC đơn cực</option>
+					<option>ADC lưỡng cực</option>
+					<option>ADC bù 2</option>
+				</select>
+				<br />
+				
+				<select id="Select2">
+					<option>Làm tròn xuống</option>
+					<option>Lượng tử hóa làm tròn (làm tròn bình thường)</option>
+				</select>
+				<br />
+			</div>
+			
+			<br /><center><button id="button-ADC" style="cursor: pointer; font-size: 24px">Xác nhận</button></center> <br />
+			
+			<div style="text-align: center">
+				<h1>Kết quả</h1>
+				Giá trị lượng tử <input type="text" id="result1" /> <br /> 
+				<div id="tu_ma">
+					Từ mã <input type="text" id="result2" /> <br /> 
+				</div>
+			</div>
+		</div>
+		
+		<div id="div-table">
+			<center><h1>Bảng lượng tử</h1></center>
+			<img id="arrow" src="../Pic/arrow.png" alt="arrow" />
+			<p>
+				<table id="table" border="1" cellpadding="10" cellspacing="0">
+					<tr id="h1">
+						<td rowspan="2"></td>
+						<td colspan="2">Natural Binary</td>
+						<td colspan="2">Offset Binary</td>
+						<td>2's C</td>
+					</tr>
+					<tr id="h2">
+						<td>m</td>
+						<td>xQ = Q*m</td>
+						<td>m'</td>
+						<td>xQ = Q*m'</td>
+						<td></td>
+					</tr>
+					<table id="add-table" border="1" cellpadding="10" cellspacing="0">
+					</table>
+				</table>
+			</p>
+		</div>
+	</div>
+	<br />
+	<center><a href="html.html">Quay lại trang trước</a></center>
+</body>
+</html>
